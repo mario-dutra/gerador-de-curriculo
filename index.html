@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+          
+       <script>
+        
+    $("#tel").mask("(00) 0 0000-0000");
+    $("#inicio-curso,#fim-curso").mask("00 / 00 / 0000");
+    
+     </script>
+</head>
+
+<body>
+
+    <div class="geral">
+    <div class="box_esconde_tudo"></div>
+        <div class="box1">
+            <div class="box">
+                <div class=" titulo">
+                
+
+               
+                <h1> GERADOR DE CURRICULOS</h1>
+                     <p class="instrucoes">preencha o formulario escolha o modelo depois é so baixar</p>
+                    </div>
+                   <div class="box-form">
+                       <h2>Informações de Contato</h2>
+                        <input type="text" name="nome" id="nome" class="largura_input" placeholder="nome" />
+                        <input id="img-input" type="file" class="largura_input" name="imagem">
+
+                        <input type="text" name="endereco" id="endereco" class="largura_input" placeholder="endereco" />
+                        <input type="text" name="email" id="email" class="largura_input" placeholder="email" />
+                        <input type="text" name="tel" id="tel"  class="largura_input" placeholder="telefone" />
+                        
+                    
+                    </div>
+
+                     <div class="box-form">
+                        <h2>Descrição Pessoal</h2>
+                        <textarea name="texto" id="texto" class="largura" rows="5" placeholder="fale sobre voce"></textarea>
+                      
+                     </div>
+
+                     <div class="box-form">
+                        <h2>Formação</h2>
+                        <input type="text" name="curso" id="curso" class="largura_input" placeholder="curso">
+
+                        <select name="graduacao" id="graduacao">
+                            <option value="Graduação - Completa">GRADUAÇÃO COMPLETA</option>
+                            <option value="Graduação - Incompleta">GRADUAÇÃO INCOMPLETA</option>
+                            <option value="Mestrado">MESTRADO</option>
+                            <option value="Doutorado">DOUTORADO</option>
+                            <option value="Ensino medio">ENSINO MEDIO</option>
+                            <option value="Técnico">TÉCNICO</option>
+                        </select>
+                        <br />
+                        Inicio<input type="text" name="inicio-curso" id="inicio-curso" class="largura_input" placeholder="10/10/2010" />
+                        Fim<input type="text" name="fim-curso" id="fim-curso" class="largura_input" placeholder="10/12/2014" />
+                       
+                    </div>
+
+                    <div class="box-form">
+                        <h2>Cursos Complementares</h2>
+                        <textarea name="c_complementar_1" id="c_complementar_1" class="largura"  rows="3"
+                            placeholder="outros cursos"></textarea>
+                        <textarea name="c_complementar_2" id="c_complementar_2"  class="largura" rows="3"
+                            placeholder="outros cursos"></textarea>
+                        <textarea name="c_complementar_3" id="c_complementar_3" class="largura" rows="3"
+                            placeholder="outros cursos"></textarea>
+                          
+                    </div>
+
+                    <div class="box-form">
+                        <h2>Habilidades</h2>
+                        <textarea name="habilidades" id="habilidades" class="largura" rows="5"
+                            placeholder="habilidades"></textarea>
+                          
+                    </div>
+
+                    <div class="box-form">
+                        <h2>Três ultimas experiencias</h2>
+                        <input type="text" name="empresa1" class="largura_input" id="empresa1"
+                            placeholder="ex: Ass. Administrativo - Empresa ">
+                        <input type="text" name="data_e_s_1" class="largura_input" id="data_e_s_1" placeholder="ex: AGO 2018 - JUL 2022">
+
+                        <textarea name="experiencia1" id="experiencia1" class="largura" rows="5"
+                            placeholder="funções exercidas"></textarea>
+
+                            <br />    <br />    <br />
+
+                        <input type="text" name="empresa2" id="empresa2" class="largura_input"
+                            placeholder="ex: Ass. Administrativo - Empresa">
+                        <input type="text" name="data_e_s_2" id="data_e_s_2" class="largura_input" placeholder="ex: AGO 2018 - JUL 2022">
+
+                        <textarea name="experiencia2" id="experiencia2" class="largura" rows="5"
+                            placeholder="funções exercidas"></textarea>
+
+                          
+                            <br />    <br />    <br />
+
+                        <input type="text" name="empresa3" id="empresa3" class="largura_input"
+                            placeholder="ex: Ass. Administrativo - Empresa">
+                        <input type="text" name="data_e_s_3" id="data_e_s_3" class="largura_input" placeholder="ex: AGO 2018 - JUL 2022">
+
+                        <textarea name="experiencia3" id="experiencia3" class="largura" rows="5"
+                            placeholder="funções exercidas"></textarea>
+                        <button class="enviar">::::OK::::</button>
+
+                        <div class="botoes">
+                        
+                                <div id="modelo1"><img class="modelos" src="modelo_2.JPG"  alt=""></div>
+                            <div id="modelo2"><img class="modelos" src="modelo_1.JPG" alt=""></div>
+                           
+                            <div class="gerar" id="gerar-pdf"><b>Gerar PDF</b></div> 
+                       
+                        </div>
+                       
+                    </div>
+
+              
+               
+
+            </div>
+
+        </div>
+
+
+        <div class="box2">
+
+            <div id="box-geral-curriculo">
+
+                <div id="topo">
+                    <div id="foto">
+
+
+                        <div id="img-container">
+                            <img id="preview" src="" width="150px" height="150px">
+                        </div>
+
+
+                    </div>
+                    <div id="nome2"></div>
+
+                </div>
+
+                <div id="box-informacoes">
+
+                    <h1>PERFIL PESSOAL</h1>
+                    <hr size="5px" noshade>
+                    <div id="texto2"></div>
+
+                    <h1>CONTATO</h1>
+                    <hr size="5px" noshade>
+                    <div class="contato">
+                        <div class="img-endereco"><img src="./endereco.jpg" width="15px" alt=""></div>
+                        <div id="endereco2"></div>
+                        <div class="img-email"><img src="./email.jpg" width="15px" alt=""></div>
+                        <div id="email2"></div>
+                        <div class="img-tel"><img src="./telefone.jpg" width="15px" alt=""></div>
+                        <div id="tel2"></div>
+                    </div>
+
+                    <h1>FORMAÇÃO</h1>
+                    <hr size="5px" noshade>
+
+                    <div class="formacao">
+                        <div class="box-formacao"></div>
+                        <div id="curso2"></div>
+                        <div class="box-formacao"></div>
+                        <div id="graduacao2"></div>
+                        <div class="box-formacao">Inicio - </div>
+                        <div id="inicio-curso2"></div>
+                        <div class="box-formacao">Conclusão - </div>
+                        <div id="fim-curso2"></div>
+                    </div>
+
+                    <div class="formacao">
+                        <div id="c_complementar1"></div>
+                        <div id="c_complementar2"></div>
+                        <div id="c_complementar3"></div>
+                    </div>
+
+                </div>
+
+                <div id="experiencias">
+                    <h1>HABILIDADES</h1>
+                    <hr size="5px" noshade>
+                    <div id="habilidades2" class="experiencia"></div>
+
+                    <h1>EXPERIÊNCIAS</h1>
+                    <hr size="5px" noshade>
+
+                    <div id="empresa_1_1" class="empresa"></div>
+                    <div id="data_e_s_1_1" class="data_e_s"></div>
+
+                    <div id="experiencia1_1" class="experiencia"></div>
+
+                    <div id="empresa_1_2" class="empresa"></div>
+                    <div id="data_e_s_1_2" class="data_e_s"></div>
+
+                    <div id="experiencia1_2" class="experiencia"></div>
+
+
+                    <div id="empresa_1_3" class="empresa"></div>
+                    <div id="data_e_s_1_3" class="data_e_s"></div>
+
+                    <div id="experiencia1_3" class="experiencia"></div>
+                </div>
+
+
+
+
+
+              
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--
+
+    
+    
+
+-->
+    <script>
+        function readImage() {
+            if (this.files && this.files[0]) {
+                var file = new FileReader();
+                file.onload = function (e) {
+                    document.getElementById("preview").src = e.target.result;
+                };
+                file.readAsDataURL(this.files[0]);
+            }
+        }
+
+        document.getElementById("img-input").addEventListener("change", readImage, false);
+    </script>
+</body>
+
+</html>

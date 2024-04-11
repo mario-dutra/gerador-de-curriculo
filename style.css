@@ -1,0 +1,540 @@
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: gray;
+    text-align: center;
+    margin-top: 30px;
+}
+
+b {
+    color: #000;
+}
+
+.titulo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #8beea0;
+
+}
+
+
+
+.instrucoes {
+    font-size: 15pt;
+}
+
+hr {
+
+    margin-left: 5%;
+    background-color: #cccc;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 20%;
+}
+
+.geral {
+    border: 0px solid rgb(230, 215, 18);
+    display: flex;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8beea0;
+
+}
+
+.box-form {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+
+.box1 {
+    border: 0px solid red;
+    width: 50%;
+    height: 580px;
+    position: absolute;
+    right: 30%;
+    z-index: 3;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.box_esconde_tudo {
+    background-color: rgb(254, 253, 253);
+    width: 100%;
+    height: 580px;
+    position: absolute;
+    z-index: 1;
+}
+
+.box2 {
+
+    width: 65%;
+    border: 0px solid green;
+    height: 580px;
+    overflow-y: scroll;
+
+}
+
+
+
+/*formulario*/
+
+.largura {
+    width: 100%;
+}
+
+.largura_input {
+    width: 95%;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    width: 120px;
+}
+
+select {
+    padding: 10px;
+}
+
+/*fim formulario*/
+
+#box-geral-curriculo {
+    border: 0px solid rgb(12, 12, 12);
+    width: 100%;
+    height: 1110px;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+#topo {
+
+    width: 100%;
+    height: 200px;
+    border: 0px solid blue;
+    position: relative;
+    background-color: #14065f;
+    font-weight: bolder;
+}
+
+.novo_t {
+    background-color: white !important;
+}
+
+#foto {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 0px solid black;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+
+}
+
+.foto_personalizada {
+
+    width: 30% !important;
+    height: 170px !important;
+    border: 0px solid black !important;
+    position: absolute;
+    top: 0px !important;
+    left: 0px !important;
+    border-radius: 0 !important;
+    text-align: center !important;
+    background-color: #e3edd2 !important;
+    padding-top: 30px !important;
+
+}
+
+#nome2 {
+    width: 69%;
+    height: 70px;
+    border: 0px solid rgb(206, 32, 32);
+    position: absolute;
+    right: 2px;
+    top: 40px;
+    font-size: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.nome2_p {
+    color: rgb(24, 23, 23) !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    font-size: 20pt !important;
+    right: 2px !important;
+    top: 0px !important;
+    padding-top: 50px !important;
+    width: 69% !important;
+    border: 0px solid black !important;
+
+
+}
+
+.img {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/*box informações*/
+#box-informacoes {
+    width: 30%;
+    height: 1030px;
+    border: 0px solid green;
+    padding-top: 10px;
+    float: left;
+    background-color: #e3edd2;
+
+
+}
+
+
+
+.box_informacao {
+    background-color: white !important;
+
+
+}
+
+
+
+/*box experiencias*/
+
+#experiencias {
+    width: 69%;
+    height: 800px;
+    border: 0px solid rgb(238, 60, 11);
+    float: right;
+    background-color: white;
+}
+
+.box_experiencias {
+    background-color: rgb(249, 242, 242) !important;
+    height: 1030px !important;
+}
+
+#texto2 {
+    width: 92%;
+    padding-left: 1%;
+    height: 100px;
+    border: 0px solid black;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #626360;
+    margin-bottom: 45px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.contato {
+    width: 92%;
+    height: 70px;
+    border: 0px solid black;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #626360;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+
+#endereco2,
+#email2,
+#tel2 {
+    border: 0px solid blue;
+    margin-left: 9%;
+    height: 15px;
+    margin-bottom: 3px;
+    width: 220px;
+}
+
+.img-endereco,
+.img-email,
+.img-tel {
+    position: absolute;
+    border: 0px solid red;
+    width: 15px;
+    height: 15px;
+
+}
+
+
+.formacao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #626360;
+    border: 0px solid black;
+    padding-left: 5%;
+    margin-bottom: 40px;
+}
+
+#curso2,
+#graduacao2,
+#inicio-curso2,
+#fim-curso2 {
+    border: 0px solid orange;
+    padding-bottom: 5px;
+}
+
+.box-formacao {
+    float: left;
+    border: 0px solid black;
+    padding-right: 3px;
+
+}
+
+#c_complementar1,
+#c_complementar2 {
+    margin-bottom: 5px;
+}
+
+
+.experiencia {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #626360;
+    margin-left: 8%;
+    width: 450px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border: 0px solid blue;
+    text-align: justify;
+
+
+}
+
+
+
+
+.empresa {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: #585854;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+.data_e_s {
+    border: 0px solid black;
+    float: left;
+    margin-left: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #585854;
+    margin-top: 10px;
+}
+
+
+
+
+
+#enviar {
+    background-color: rgb(47, 171, 47);
+    padding: 5px;
+    border: none;
+}
+
+.botoes {
+    border: 0px solid black;
+    text-align: center;
+    position: fixed;
+    right: 5%;
+    width: 172px;
+    z-index: 3;
+    top: 10px;
+}
+
+.modelos {
+    width: 170px;
+}
+
+#modelo1,
+#modelo2,
+#gerar-pdf {
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+
+/*mudar cor*/
+.botoes>div {
+    box-shadow: none;
+    border: 1px solid #cecece;
+    cursor: pointer;
+
+}
+
+.buttonClicked {
+    border: 3px solid #628cea !important;
+    color: #fff;
+}
+
+.modelos_2 {
+    width: 0px;
+}
+
+/*responsividade*/
+
+
+@media (max-width:1000px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .geral {
+        margin: auto;
+        border: 0px solid red;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 550px;
+        overflow: hidden;
+    }
+
+    .box1 {
+        width: 3800px;
+        height: 100%;
+        border: 0px solid rgb(3, 163, 16);
+        position: relative;
+        left: 5%;
+
+    }
+
+    .box2 {
+        height: 295px;
+        background-color: orange;
+
+    }
+
+    .modelos_2 {
+        width: 70px;
+    }
+
+    .botoes {
+        border: 0px solid rgb(118, 15, 191);
+        position: relative;
+        display: flex;
+        left: 10%;
+        z-index: 3;
+
+
+        width: 70%;
+    }
+
+
+    .box-form {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 10px;
+
+    }
+
+
+    #modelo1,
+    #modelo2 {
+
+        float: left;
+        border: 1px solid rgb(22, 22, 158);
+        z-index: -3;
+    }
+
+    #modelo1 {
+        margin-right: 40px;
+        z-index: -3;
+    }
+
+    #modelo1 {
+        left: 10px;
+        z-index: -3;
+
+    }
+
+    #gerar-pdf {
+        position: relative;
+        width: 100%;
+        top: 98%;
+        background-color: #1dc041;
+        border: 0px solid red;
+        left: 82px;
+        text-align: center;
+        height: 40px;
+    }
+
+    b {
+        color: white;
+    }
+
+    .modelos {
+        width: 100%;
+
+
+    }
+
+    input,
+    textarea {
+
+        width: 91%;
+    }
+
+
+
+    #modelo1,
+    #modelo2,
+    #gerar-pdf {
+        width: 30%;
+        padding: 4px;
+        margin-bottom: 10px;
+
+    }
+
+    .titulo {
+        height: 300px;
+    }
+
+
+
+
+
+}
